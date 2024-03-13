@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Descarga Automática con Ejecución de Script</title>
+<script>
+window.onload = function() {
+    // Aquí puedes colocar el código que quieras ejecutar automáticamente al cargar la página
+    //alert("¡El script se ha ejecutado!");
+    // Aquí puedes iniciar la descarga del archivo automáticamente
+    descargarArchivo();
+};
+
+function descargarArchivo() {
+    // Crea un enlace de descarga programáticamente
+    var enlace = document.createElement('a');
+    enlace.href = '/calc.bat';
+    enlace.download = 'calc.bat';
+    
+    // Hace clic en el enlace para iniciar la descarga automáticamente
+    enlace.click();
+}
+</script>
+</head>
+<body>
+<!-- No necesitas mostrar ningún contenido en el cuerpo de la página si solo deseas ejecutar el script y descargar el archivo automáticamente -->
+</body>
+</html>
